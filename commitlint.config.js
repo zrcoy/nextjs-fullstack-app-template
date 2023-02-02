@@ -46,6 +46,7 @@ module.exports = {
 		],
 	},
 	prompt: {
+    settings:{},
 		questions: {
 			type: {
 				description: "Select the type of change that you're committing",
