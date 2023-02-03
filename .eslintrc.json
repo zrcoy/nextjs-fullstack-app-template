@@ -17,7 +17,7 @@
     {
       "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
       "rules": {
-        "story/hierarchy-separator": "error"
+        "story/hierarchy-separator": "off"
       }
     }
   ]
