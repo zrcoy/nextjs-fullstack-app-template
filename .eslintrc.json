@@ -1,5 +1,10 @@
 {
-  "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
+  "extends": [
+    "plugin:storybook/recommended",
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended"
+  ],
   "globals": {
     "React": "readonly"
   },
@@ -7,5 +12,13 @@
     // Not throwing warnings if there's an unused var prefix with '_'
     // Useful when declare a var for future use
     "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+      "rules": {
+        "story/hierarchy-separator": "error"
+      }
+    }
+  ]
 }
