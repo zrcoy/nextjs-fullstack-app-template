@@ -6,7 +6,8 @@
     "eslint:recommended"
   ],
   "globals": {
-    "React": "readonly"
+    "React": "readonly",
+    "JSX": "readonly"
   },
   "rules": {
     // Not throwing warnings if there's an unused var prefix with '_'
