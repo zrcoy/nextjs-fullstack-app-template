@@ -245,39 +245,15 @@ For example: `"engines": { "node": ">=18.0.0", "yarn": ">=1.22.0", "npm": "pleas
 
 - First input **type** of commit, which holds information about the goal of a change. **Required**. Available type could be found within the comments at the top of **commitlint.config.js** file, which is based on Angular's official docs recommendation.
 
-> **build**: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
-
->
-
-> **ci**: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
-
->
-
-> **docs**: Documentation only changes
-
->
-
-> **feat**: A new feature
-
->
-
-> **fix**: A bug fix
-
->
-
-> **perf**: A code change that improves performance
-
->
-
-> **refactor**: A code change that neither fixes a bug nor adds a feature
-
->
-
-> **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-
->
-
-> **test**: Adding missing tests or correcting existing tests to be deleted: test for commit lint
+  - **build**: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+  - **ci**: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+  - **docs**: Documentation only changes
+  - **feat**: A new feature
+  - **fix**: A bug fix
+  - **perf**: A code change that improves performance
+  - **refactor**: A code change that neither fixes a bug nor adds a feature
+  - **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+  - **test**: Adding missing tests or correcting existing tests to be deleted: test for commit lint
 
 - Then input **scope**, which marks which sub-component of the project is affected. **Optional**.
 
@@ -313,19 +289,10 @@ For example: `"engines": { "node": ">=18.0.0", "yarn": ">=1.22.0", "npm": "pleas
 
 - Component template folder structure:
 
-> BaseTemplate.mocks.ts: mock data for stories.
-
->
-
-> BaseTemplate.module.css: css module for this component.
-
->
-
-> BaseTemplate.stories.tsx: storybook for this component.
-
->
-
-> BaseTemplate.tsx: the component self.
+  - **BaseTemplate.mocks.ts**: mock data for stories.
+  - **BaseTemplate.module.css**: css module for this component.
+  - **BaseTemplate.stories.tsx**: storybook for this component.
+  - **BaseTemplate.tsx:** the component self.
 
 - Take a look at an example CatCard component which generated from the BaseTemplate component. CatCard component resides in **src/components/cards/cat**.
 
@@ -363,17 +330,15 @@ For example: `"engines": { "node": ">=18.0.0", "yarn": ">=1.22.0", "npm": "pleas
 
 ### Commands
 
-> "**yarn dev**": "cross-env NODE_OPTIONS='--inspect' next dev",
->
-> "**yarn build**": "next build",
-
-> "**yarn start**": "next start",
-> "**yarn lint**": "next lint",
-> "**yarn prettier**": "prettier --write .",
-> "**yarn prepare**": "husky install",
-> "**yarn commit**": "commit",
-> "**yarn storybook**": "start-storybook -p 6006",
-> "**yarn build-storybook**": "build-storybook"
+- "**yarn dev**": "cross-env NODE_OPTIONS='--inspect' next dev",
+- "**yarn build**": "next build",
+- "**yarn start**": "next start",
+- "**yarn lint**": "next lint",
+- "**yarn prettier**": "prettier --write .",
+- "**yarn prepare**": "husky install",
+- "**yarn commit**": "commit",
+- "**yarn storybook**": "start-storybook -p 6006",
+- "**yarn build-storybook**": "build-storybook"
 
 <br /><br />
 
